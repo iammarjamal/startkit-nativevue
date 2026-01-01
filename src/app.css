@@ -1,0 +1,131 @@
+/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+.ns-root, .ns-modal, .ns-root, .ns-modal {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+  --color-red-400: #ff6467;
+  --color-red-500: #fb2c36;
+  --color-orange-200: #ffd6a7;
+  --color-green-100: #dcfce7;
+  --color-green-600: #00a63e;
+  --color-gray-700: #364153;
+  --color-gray-900: #101828;
+  --color-black: #000;
+  --color-white: #fff;
+  --spacing: 4;
+  --text-sm: 14;
+  --text-sm--line-height: calc(1.25 / 0.875);
+  --text-4xl: 36;
+  --text-4xl--line-height: calc(2.5 / 2.25);
+  --font-weight-bold: 700;
+  --default-font-family: var(--font-sans);
+  --default-mono-font-family: var(--font-mono);
+}
+.ns-root, .ns-modal {
+  line-height: 1.5;
+  font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  font-variation-settings: var(--default-font-variation-settings, normal);
+}
+.collapse {
+  visibility: collapse;
+}
+.visible {
+  visibility: visible;
+}
+.m-4 {
+  margin: calc(var(--spacing) * 4);
+}
+.mb-4 {
+  margin-bottom: calc(var(--spacing) * 4);
+}
+.flex-shrink {
+  flex-shrink: 1;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.transform {
+  transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.gap-4 {
+  gap: calc(var(--spacing) * 4);
+}
+.bg-black {
+  background-color: var(--color-black);
+}
+.bg-red-500 {
+  background-color: var(--color-red-500);
+}
+.bg-white {
+  background-color: var(--color-white);
+}
+.p-2 {
+  padding: calc(var(--spacing) * 2);
+}
+.p-8 {
+  padding: calc(var(--spacing) * 8);
+}
+.text-right {
+  text-align: right;
+}
+.text-4xl {
+  font-size: var(--text-4xl);
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+}
+.text-sm {
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+}
+.font-bold {
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+}
+.text-black {
+  color: var(--color-black);
+}
+.text-gray-700 {
+  color: var(--color-gray-700);
+}
+.text-green-100 {
+  color: var(--color-green-100);
+}
+.text-green-600 {
+  color: var(--color-green-600);
+}
+.text-orange-200 {
+  color: var(--color-orange-200);
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.italic {
+  font-style: italic;
+}
+.dark .bg-black {
+  background-color: var(--color-black);
+}
+.dark .text-red-400 {
+  color: var(--color-red-400);
+}
+.dark .text-white {
+  color: var(--color-white);
+}
+.ns-root {
+  color: var(--color-gray-900);
+  background-color: var(--color-white);
+}
+.ns-dark,
+  .dark {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}

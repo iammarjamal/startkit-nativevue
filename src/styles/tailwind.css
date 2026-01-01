@@ -1,0 +1,29 @@
+/**
+ * NativeScript + Tailwind CSS v4
+ * 
+ * هذا الملف المصدر - يتم معالجته عبر PostCSS
+ * الناتج: src/app.css
+ */
+
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* تحديد مسارات الفحص (relative to this file) */
+@source "../**/*.vue";
+@source "../**/*.ts";
+
+/* ============================================
+   Base Styles for NativeScript
+   ============================================ */
+@layer base {
+  .ns-root {
+    color: var(--color-gray-900);
+    background-color: var(--color-white);
+  }
+
+  .ns-dark,
+  .dark {
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
+}
