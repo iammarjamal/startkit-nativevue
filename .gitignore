@@ -3,6 +3,7 @@ hooks/
 node_modules/
 platforms/
 .ns-vite-build/
+src/app.css
 
 # Logs
 logs

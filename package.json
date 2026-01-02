@@ -5,17 +5,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "css:build": "postcss src/styles/tailwind.css -o src/app.css",
-    "css:watch": "chokidar 'src/**/*.vue' 'src/**/*.ts' 'src/styles/*.css' -c 'bun run css:build' --initial",
-    "css:debug": "POSTCSS_DEBUG=true bun run css:build",
-    "dev:ios": "concurrently -k -n server,ns -c 'magenta,yellow' 'bun run dev:server:ios' 'wait-on tcp:5173 && bun run ios'",
-    "dev:android": "concurrently -k -n server,ns -c 'magenta,yellow' 'bun run dev:server:android' 'wait-on tcp:5173 && bun run android'",
-    "dev:server:ios": "vite serve --host 0.0.0.0 -- --env.ios --env.hmr",
-    "dev:server:android": "vite serve --host 0.0.0.0 -- --env.android --env.hmr",
-    "ios": "ns debug ios --device=00008130-000231CE0883401C",
-    "android": "ns debug android",
-    "build:ios": "bun run css:build && ns build ios",
-    "build:android": "bun run css:build && ns build android",
+    "dev:server": "./scripts/dev-server.mjs",
+    "dev:install": "./scripts/dev-install.mjs",
+    "build": "./scripts/build.mjs",
     "clean": "rm -rf platforms node_modules .ns-vite-build"
   },
   "dependencies": {
@@ -25,23 +17,17 @@
     "nativescript-vue": "3.0.2"
   },
   "devDependencies": {
-    "@csstools/postcss-oklab-function": "^4.0.12",
     "@hookun/parse-animation-shorthand": "^0.1.5",
     "@nativescript/android": "~9.0.1",
     "@nativescript/ios": "~9.0.2",
     "@nativescript/types": "~9.0.0",
     "@nativescript/vite": "^1.0.5",
-    "@tailwindcss/cli": "^4.1.18",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^25.0.3",
-    "chokidar-cli": "^3.0.0",
-    "concurrently": "^9.2.1",
     "nativescript": "~9.0.1",
     "patch-package": "^8.0.1",
     "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1",
     "tailwindcss": "~4.1.18",
-    "typescript": "~5.9.3",
-    "wait-on": "^9.0.3"
+    "typescript": "~5.9.3"
   }
 }

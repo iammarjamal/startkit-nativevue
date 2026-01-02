@@ -13,17 +13,19 @@
 @source "../**/*.ts";
 
 /* ============================================
-   Base Styles for NativeScript
+   NativeScript Custom Variants
    ============================================ */
+
+/* Theme Variants */
+@custom-variant dark (&:where(.ns-dark, .ns-dark *));
+
 @layer base {
-  .ns-root {
-    color: var(--color-gray-900);
-    background-color: var(--color-white);
+  /* NativeScript Dark Theme Support */
+  .ns-dark {
+    @apply bg-black text-white;
   }
 
-  .ns-dark,
-  .dark {
-    color: var(--color-white);
-    background-color: var(--color-black);
+  .ns-light {
+    @apply bg-white text-black;
   }
 }
